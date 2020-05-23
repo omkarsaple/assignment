@@ -1,4 +1,4 @@
-***DAY 1***
+**DAY 1**
 '''
 2nd question
 n=int(input('enter number:'))
