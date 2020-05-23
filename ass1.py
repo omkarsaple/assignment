@@ -1,4 +1,4 @@
-#DAY 1
+***DAY 1***
 '''
 2nd question
 n=int(input('enter number:'))
@@ -34,7 +34,7 @@ else:
 s=input('enter your sentence:')
 print(s.upper())
 '''
-#DAY 2
+***DAY 2***
 '''
 2nd question=count even AND ODD no
 l=[1,2,3,4,5,6,7,8,9]
