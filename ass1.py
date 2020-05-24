@@ -71,10 +71,69 @@ for i in range(1,n+1):
     if i<n:
         print("+",end="")
 print('=',s)
-'''
+
 4th ques=row wise sum
 def row_sum(n):
     n=pow(n,3)
     return n
 print(row_sum(2))
 print(row_sum(4))
+'''
+***DAY 3***
+'''
+3rd que=PATTERN
+n=int(input('enter the number:'))
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(j,end='')
+    print()  
+
+5th que=NARCISSTIC NO
+n=int(input('enter number:'))
+ip=n
+s=0
+l=len(str(n))
+while n!=0:
+    r=n%10
+    p=pow(r,l)
+    s=s+p
+    n=n//10
+op=s
+if ip==op:
+    print('it is narcisstic number')
+else:
+    print('not narcisstic number')
+
+1st que=STORE SQUARE OF LIST
+l=[1,2,3,4,5]
+print(l)
+l1=[]
+for i in l:
+    s=i*i
+    l1.append(s)
+print(l1)    
+
+2nd que=LIST CONTAINS INT,FLOAT,STR
+l=[1,2,3,'omkar','parth','nik',20.5,40.4,60.8]
+I=[]
+s=[]
+f=[]
+for i in l:
+    if type(i)==int:
+        I.append(i)
+    elif type(i)==str:
+        s.append(i)
+    elif type(i)==float:
+        f.append(i)
+print(I)
+print(s)
+print(f)
+
+4the que=CREATE 3*3 MATRIX AND PRINT SUM OF MATRICES
+import numpy as np
+a=np.array([1,2,3,4,5,6,7,8,9])
+n=a.reshape(3,3)
+print(n)
+print(sum(n))
+'''        
+
