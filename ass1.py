@@ -1,4 +1,4 @@
-#DAY 1
+***DAY 1***
 '''
 2nd question
 n=int(input('enter number:'))
@@ -34,7 +34,7 @@ else:
 s=input('enter your sentence:')
 print(s.upper())
 '''
-#DAY 2
+***DAY 2***
 '''
 2nd question=count even AND ODD no
 l=[1,2,3,4,5,6,7,8,9]
@@ -79,7 +79,7 @@ def row_sum(n):
 print(row_sum(2))
 print(row_sum(4))
 '''
-#DAY 3
+***DAY 3***
 '''
 3rd que=PATTERN
 n=int(input('enter the number:'))
@@ -135,7 +135,7 @@ n=a.reshape(3,3)
 print(n)
 print(sum(n))
        
-#DAY 4
+***DAY 4***
 1st que=MAX OF THREE NUMBERS
 def max(a,b,c):
     if a>b:
@@ -191,7 +191,7 @@ def fun():
     return len(locals())
 print(fun())    
 
-#DAY5
+***DAY5***
 4th que-CONCAT TWO LIST INDEX WISE
 l1=['m','na','i','om']
 l2=['y','me','s','kar']
