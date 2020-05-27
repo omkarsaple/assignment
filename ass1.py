@@ -256,3 +256,43 @@ if found==True:
 else:
     print('key is not found')
 '''
+***DAY 6***
+5th que=ACEES KEY "HISTORY"
+d={'class':{'student':{'name':'mike','marks':{'physics':70,'history':80}}}}
+print(d.get('history',80))#1st method
+a=d['class']['student']['marks']['history']#2nd method
+print(a)
+
+1st que=SWAP KEY AND VALUES
+d={'omkar':20,'parth':4,'mangesh':21}
+print(d)
+a=d.keys()
+b=d.values()
+a,b=b,a
+print(dict(zip(a,b)))
+
+4th que=extend nested list with another list
+l=['a','b',['c',['d','e',['f','g'],'k'],'l'],'m','n']
+l1=['h','i','j']
+l[2][1][2].extend(l1)
+print(l)
+
+2nd que=SELECTION SORT
+l=[15,2,20,4,1]
+for i in range(len(l)):
+    m=min(l[i:])
+    ind=l.index(m)
+    l[i],l[ind]=l[ind],l[i]
+print('sorted list',l)    
+
+3rd que=INSERTION SORT
+l=[15,2,20,4,1]
+for i in range(1,len(l)):
+    c=l[i]
+    pos=i
+    while c<l[pos-1] and pos>0:
+        l[pos]=l[pos-1]
+        pos=pos-1
+    l[pos]=c
+print('sorted list',l)    
+'''    
