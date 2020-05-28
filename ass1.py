@@ -298,7 +298,7 @@ for i in range(1,len(l)):
     l[pos]=c
 print('sorted list',l)    
     
-#DAY7
+***DAY 7***
 5th que=COMPOSITION EXAMPLE
 class Student:
     def __init__(self,name,id):
