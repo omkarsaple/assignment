@@ -392,12 +392,9 @@ c.m1()
 
 1st que=IMPLEMENT CONSTRUCTOR WITH VARIABLE ARGUMENTS
 class A:
-    def __init__(self,name,age):
-        self.name=name
-        self.age=age
-a=A('omkar',20)
-print(a.name)
-print(a.age)
+    def __init__(self,*args):
+        print('sum is:',sum(args))     
+a=A(1,2,3) 
 
 4th que=OPERATOR OVERLOADING
 class Operator:
