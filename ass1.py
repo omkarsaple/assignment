@@ -376,5 +376,48 @@ while True:
         sys.exit()
     else:
         print('choose valid option')
-'''                 
-        
+'''
+
+***DAY 8***
+3rd que=MULTIPLE INHERITANCE
+class A:
+    def m1(self):
+        print('A')
+class B():
+    def m1(self):
+        print('B')
+class C(A,B):pass
+c=C()
+c.m1()
+
+1st que=IMPLEMENT CONSTRUCTOR WITH VARIABLE ARGUMENTS
+class A:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+a=A('omkar',20)
+print(a.name)
+print(a.age)
+
+4th que=OPERATOR OVERLOADING
+class Operator:
+    def __init__(self,a,b):
+        self.a=a
+        self.b=b
+    def add(self):
+        print('addition of number is:',self.a+self.b)
+o=Operator(10,20)
+o.add()
+o1=Operator('omkar','saple')
+o1.add()
+
+5th que=SQUARE AND CUBE OF LIST USING LAMBDA
+l=[1,2,3,4,5,6,7,8]
+s=list(map(lambda n:n*n,l))
+c=list(map(lambda n:pow(n,3),l))
+print(s)
+print(c)
+'''
+
+
+
