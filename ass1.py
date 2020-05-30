@@ -415,6 +415,67 @@ c=list(map(lambda n:pow(n,3),l))
 print(s)
 print(c)
 '''
+***DAY 9***
+1st que=EXCEPTION HANDLING
+def div(n):
+    try:
+       print(n//0)
+    except ZeroDivisionError:
+            return n%10
+print(div(2))            
+
+2nd que=MOB NO IS VALID OR NOT
+import re
+s=input('enter the mobile no:')
+n=re.fullmatch('[6-9][0-9]{9}',s)
+if n!=None:
+    print('mob no is valid')
+else:
+    print('mob no is not valid')
+
+3rd que=VALID MAIL ID OR NOT
+import re
+s=input('enter maild id:')
+p=re.fullmatch('\w[a-zA-Z0-9_.]*@[a-z0-9]+[.]com',s)
+if p!=None:
+    print('its a valid mail id')
+else:
+    print('its not valid mail id')
+
+4th que=VALID CAR NO OR NOT
+import re
+s=input('enter car registration number from state maharashtra:')
+p=re.fullmatch('MH[0-9]{2}-[A-Z]{2}-[0-9]{4}',s)
+if p!=None:
+    print('valid car no')
+else:
+    print('not valid no')
+
+5th que=ARITHMETIC OPERZTIONS USING DECORATOR
+def arithmeticop(func):
+    def op(a,b):
+        func(a,b)
+        print("The product is :", a*b)
+        print("The division is :", a/b)
+        print("The remainder is :", a%b)
+    return op
+@arithmeticop
+def add_sub(a, b):
+    print("The addition is :", a+b)
+    print("The subtraction is :",a-b)
+add_sub(8,4)
+
+6th que=USING GENERATOR PRINT FIBONACCI
+def fibo(n):
+    a=0
+    b=1
+    for i in range(0,n):
+        yield a
+        a,b=b,a+b
+for i in fibo(100):
+    print(i)
+'''
+
 
 
 
