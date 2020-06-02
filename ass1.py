@@ -475,6 +475,89 @@ def fibo(n):
 for i in fibo(100):
     print(i)
 '''
+***DAY 10***
+1st que-PRINT NUMPY VERSION
+import numpy as np
+print(np.__version__)
+
+3rd que=NONO OF ARRAY ELEMENT IS ZERO 
+import numpy as np
+a=np.array({1,2,3])
+print(np.all(a))
+
+4th que=CHECK FOR NON ZERO ELEMET
+import numpy as np
+a=np.array([1,2,34,0])
+print(np.any(a))
+
+5th que=CHECK NAN IN ARRAY
+import numpy as np
+a=np.array([2,3,4,np.nan,5])
+print(np.isnan(a))
+
+6th que=COMPARE 2 ARRAYs
+import numpy as np
+a=np.array([1,20,34,2])
+b=np.array([20,9,6,5])
+print(a>b)
+print(a>=b)
+print(a<b)
+print(a<=b)
+
+7th que=CHECK 2 ARRAYS ARE EQUALS OR NOT
+import numpy as np
+x=np.array([72,79,85,90,150,-135,120,-10,60,100])
+y=np.array([72,79,85,90,150,-135,120,-10,60,10.000001])
+print(x==y)
+print(x!=y)
+
+8th que=GIVE THE SIZE OF ARRAY
+import numpy as np
+a=np.array([1,7,13,105])
+print(np.size(a))
+
+9th que=CREATE ARRAY OF 10ZEROS,10ONES,10FIVES
+import numpy as np
+a=np.array([0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,5,5,5,5,5,5,5,5,5,5])
+print(a)
+
+10th que=CREATE ARRAY OF 30-70 INTEGERS
+import numpy as np
+a=np.arange(30,71)
+print(a)
+
+11th que=CREATE ARRAY OF EVEN INTEGERS FROM 30-70
+import numpy as np
+a=np.arange(30,71,2)
+print(a)
+
+12th que=CREATE 3*3 MATRIX
+import numpy as np
+a=np.arange(30,39)
+print(a.reshape(3,3))
+
+13th que=GENERATE RANDOM NO FROM 0,1
+import numpy as np
+print(np.random.normal(0,1))
+
+14th que=GENERATE 15 RANDOME NOS
+import numpy as np
+print(np.random.normal(0,1,15))
+
+15th que=CREATE VECTOR FROM 15-56 AND PRINT ALL NOS EXCEPT FST AND LAST
+import numpy as np
+a=np.arange(15,56)
+print(a[1:41])
+
+2nd que=CHECK ELEMETS ARE REAL,COMPLEX or SCALAR
+import numpy as np
+a=np.array([1,2,3,4+5j,10,2+3j,6+8j])
+print(np.isreal(a))
+print(np.iscomplex(a))
+print(np.isscalar(a))
+'''
+
+
 
 
 
