@@ -556,6 +556,95 @@ print(np.isreal(a))
 print(np.iscomplex(a))
 print(np.isscalar(a))
 '''
+***DAY 11***
+1st que=CREATE ARRAY OF 3*4 AND ITERATE IT
+import numpy as np
+ar=np.arange(1,13)
+ar=ar.reshape(3,4)
+print(ar)
+for i in np.nditer(ar):
+    print(i)
+
+2nd que=CREATE NUMPY ARRAY OF SIZE 10 AND EVENLY DISTRIBUTED BETWEEN 5-50
+import numpy as np
+a=np.linspace(5,50,10)
+print(a)
+
+3rd que=CHANGE SIGN OF ARRAY ELEMENT FROM 9,15
+import numpy as np
+a=np.arange(0,21)
+print(a)
+a[(a>=9) & (a<=15)]*=-1
+print(a)
+
+4th que=CREATE VECTOR LENGTH OF 5 AND FILLED WITH INTEGER 0-10
+import numpy as np
+b=np.random.randint(0,11,5)
+print(b)
+
+5th que=multiply 2 vectors
+import numpy as np
+a1=np.arange(1,10)
+a2=np.arange(11,20)
+print(a1*a2)
+
+6th que=CREATE MATRIX OF 3*4 VALUES RANGE FROM 10-21
+import numpy as np
+a1=np.arange(10,22).reshape(3,4)
+print(a1)
+
+7th que=FIND NUMBER OF ROWS AND COLUMNS OF ARRAY
+import numpy as np
+a1=np.arange(10,22).reshape(3,4)
+print(a1.shape)
+
+8th que=IDENTITY MATRIX OF 3*3
+import numpy as np
+print(np.identity(3,dtype=int))
+
+9th que=CREATE ARRAY WITH 1 ON BORDER AND INNER ELEMENTS ARE 0
+import numpy as np
+a=np.ones((10,10))
+a[1:-1,1:-1]=0
+print(a)
+
+10th que=CREATE 5*5 MATRIX WITH DIAG ELEMENTS 1-5
+import numpy as np
+print(np.diag([1,2,3,4,5]))
+
+11th que=CREATE ARRAY WITH DIAG ELEMTS 0 AND OTHERS 1
+import numpy as np
+a=np.zeros((4,4))
+a[::2,1::2]=1
+a[1::2,::2]=1
+
+12th que=CREATE 3*3*3MATRIX 
+import numpy as np
+x = np.arange(0,27).reshape((3, 3, 3))
+print(x)
+
+13th que=CALCULATE SUM OF ELEMETS,ROW WISE,COLUMN WISE SUM
+import numpy as np
+a1=np.arange(10,22).reshape(3,4)
+print(a1.sum())
+print(a1.sum(axis=0))
+print(a1.sum(axis=1))
+
+14th que=INNER PRODUCT OF TWO VECTORS
+import numpy as np
+a1=np.array([2,3,4])
+a2=np.array([6,7,8])
+print(np.dot(a1,a2))
+
+15th que=ADD VECTOR IN EACH ROW OF MATRIX
+import numpy as np
+a=np.arange(0,6).reshape(2,3)
+print(a)
+v=np.array([1,2,3])
+r=np.empty_like(a)
+for i in range(2):
+    r[i]=a[i]+v
+print(r)
 
 
 
