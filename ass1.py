@@ -645,7 +645,82 @@ r=np.empty_like(a)
 for i in range(2):
     r[i]=a[i]+v
 print(r)
+'''
+            
+***DAY 12***
+1st que=READ 1ST 5 AND LAST 5 ROWS
+import pandas as pd
+df=pd.read_csv("F://Automobile_data.csv")
+print(df.head(5))
+print(df.tail(5))
 
+3rd que=FIND EXPENSIVER CAR COMPANY NAME
+import pandas as pd
+df=pd.read_csv("F://Automobile_data.csv")
+print(df['company'][df['price']==df['price'].max()])
+
+4th que=GET ALL DETAILS OF TOYOTA
+import pandas as pd
+df=pd.read_csv("F://Automobile_data.csv")
+g=df.groupby('company')
+g.get_group('toyota')
+print(g)
+
+5th que=COUNT TOTAL CAR PER COMPANY
+import pandas as pd
+df=pd.read_csv("F://Automobile_data.csv")
+g=df.groupby('company')
+g.company.count()
+print(g)
+
+6th que=FIND EACH COMPANYS HIGHEST CAR PRICE
+import pandas as pd
+df=pd.read_csv("F://Automobile_data.csv")
+g=df.groupby('company')
+print(g['company','price'].max())
+
+7th que=FIND THE AVERAGE MILEAGE OF EACH CAR MAKING COMPANY
+import pandas as pd
+df=pd.read_csv("F://Automobile_data.csv")
+g=df.groupby('company')
+print(g['company','average-mileage'].mean())
+
+8th que=SORT ALL VALUES BY PRICE
+import pandas as pd
+df=pd.read_csv("F://Automobile_data.csv")
+print(df.sort_values(by='price'))
+
+2nd que=CLEAN DATA AND UPDATE IT
+import pandas as pd
+df=pd.read_csv("F://Automobile_data.csv")
+na_values={
+'price':[" ","n.a"],
+'stroke':[" ","n.a"],
+'horsepower':[" ","n.a"],
+'peak-rpm':[" ","n.a"],
+'average-mileage':["?","n.a"]}
+df.to_csv("F://Automobile_data.csv")
+print(df)
+
+9th que=CONCAT 2 DF
+import pandas as pd
+GermanCars ={'Company':['Ford','Mercedes','BMV','Audi'],'Price':[23845,171995,135925,71400]}
+df=pd.DataFrame(GermanCars)
+print(df)
+japaneseCars ={'Company':['Toyota','Honda','Nissan','Mitsubishi'],'Price':[29995,23600,61500,58900]}
+df1=pd.DataFrame(japaneseCars)
+print(df1)
+c=pd.concat([df,df1],ignore_index=True)
+print(c)
+
+10th que=MERGE 2 DF
+import pandas as pd
+Car_Price ={'Company':['Toyota','Honda','BMV','Audi'],'Price':[23845,17995,135925,71400]}
+df1=pd.DataFrame(Car_Price)
+car_Horsepower={'Company':['Toyota','Honda','BMV','Audi'],'horsepower':[141,80,182,160]}
+df2=pd.DataFrame(car_Horsepower)
+c=pd.merge(df1,df2,on='company')
+print(c)
 
 
 
