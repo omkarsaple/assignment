@@ -722,6 +722,52 @@ df2=pd.DataFrame(car_Horsepower)
 c=pd.merge(df1,df2,on='company')
 print(c)
 
+***DAY 13***
+1.create and display array-like object containing array of data
+import pandas as pd
+a=pd.Series([1,2,3,4])
+print(a)
+
+2.compare two panda series
+import pandas as pd
+a1=pd.Series([4,5,6,7,8])
+a2=pd.Series([4,6,6,8,9])
+print(a1==a2)
+print(a1>a2)
+print(a1<a2)
+
+3.Convert dictionary to series
+import pandas as pd
+d={'a':100,'b':200,'c':300,'d':400}
+print(pd.Series(d))
+
+4.Convert numpy array to series
+import pandas as pd
+import numpy as np
+a=np.array([1,2,3,4])
+print(pd.Series(a))
+
+5.change data type of Series
+import pandas as pd
+a=pd.Series([10,20,30,40])
+print(pd.to_numeric(a))
+
+6.convert 1st column of dataframe as a series
+import pandas as pd
+d={'col1':[1,2,3,4,5],'col2':[6,7,8,9,10],'col3':[11,12,13,14,15]}
+print(pd.Series(d['col1']))
+
+7.convert series to array
+import pandas as pd
+f=pd.Series([10,20,30,40,50])
+print(f.array)
+
+8.sort given series
+import pandas as pd
+v=pd.Series(['100','200','python','300.12','400'])
+print(pd.Series(v).sort_values())
+'''
+
 
 
 
